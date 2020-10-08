@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "ArialMT";
+  src: url("../fonts/ArialMT.woff2") format("woff2"), url("../fonts/ArialMT.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ArialMT-italic";
+  src: url("../fonts/Arial-ItalicMT.woff2") format("woff2"),
+    url("../fonts/Arial-ItalicMT.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ArialMT";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 1;
+  color: #445161;
+  text-align: center;
+}
+
+.header {
+  color: #fff;
+  background-color: #445161;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 42px 0;
+}
+
+.header__title {
+  font-size: 60px;
+  text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
+  margin: 0 0 29px 0;
+  line-height: 1;
+}
+
+.header__list {
+  padding: 0 0 0 40px;
+}
+.header__item {
+  position: relative;
+  text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.header__item:before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 19px;
+  background-image: url("../img/icons/check.png");
+  left: -35px;
+  top: 5px;
+}
+
+.about {
+  padding: 48px 0 50px 0;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__content {
+  width: 55%;
+}
+
+.about__title {
+  text-align: left;
+  margin: 0 0 25px 0;
+}
+
+.about__text + .about__text {
+  margin: 11px 0 0 0;
+}
+
+.dignity {
+  background-color: #f5f5f5;
+  padding: 50px 0 15px 0;
+}
+
+.dignity__title {
+  margin: 0 0 25px 0;
+}
+.dignity__list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.dignity__item {
+  position: relative;
+  width: 50%;
+  margin: 0 0 26px 0;
+  padding: 0 0 0 44px;
+}
+
+.dignity__item:before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icons/plus.png");
+  left: 4px;
+  top: 3px;
+}
+
+.screenshots {
+  padding: 55px 0 20px 0;
+}
+
+.screenshots__title {
+  margin: 0 0 25px 0;
+}
+
+.screenshots__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.screenshots__item {
+  display: flex;
+  width: 50%;
+  margin: 0 0 25px 0;
+}
+
+.screenshots__content {
+  padding: 0 12px 0 19px;
+}
+.screenshots__item-title {
+  font-size: 24px;
+  line-height: 1;
+  color: #445161;
+  margin: 0 0 12px 0;
+}
+
+.reviews {
+  padding: 49px 0 26px 0;
+  background-color: #f5f5f5;
+}
+
+.reviews__title {
+  margin: 0 0 28px 0;
+}
+
+.reviews__avatar {
+  border-radius: 50%;
+}
+
+.reviews__list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reviews__item {
+  width: 48%;
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__text:before {
+  position: absolute;
+  content: "";
+  border: 15px solid transparent;
+  border-right: 15px solid #ebebeb;
+  top: 28px;
+  left: -30px;
+}
+
+.reviews__text {
+  font-family: "ArialMT-italic";
+  font-size: 14px;
+  line-height: 1.29;
+  width: 80%;
+  margin: 0;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #ebebeb;
+  position: relative;
+}
+
+.reviews__author {
+  font-size: 14px;
+  line-height: 1;
+  color: #989898;
+  display: block;
+  margin: 5px 0 0 0;
+}
+
+.buy {
+  padding: 50px 0 50px;
+}
+.buy__title {
+  margin: 0 0 29px 0;
+}
+
+.buy__list {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.buy__item {
+  border-radius: 5px;
+  background-color: #445161;
+  color: #fff;
+  width: 25.5%;
+  border: 2px solid #445162;
+}
+
+.buy__item-title {
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  padding: 16px 0 17px 0;
+}
+
+.buy__price {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  color: #445162;
+  line-height: 1;
+  background-color: #fff;
+  padding: 18px 0 18px 0;
+}
+
+.buy__items {
+  margin-left: 20px;
+  display: block;
+  padding: 19px 20px;
+}
+
+.buy__items-item {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.btn {
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1;
+  color: #445161;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 14px 112px 13px 111px;
+  margin: 0 auto 20px;
+  cursor: pointer;
+}
