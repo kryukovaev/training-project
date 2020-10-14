@@ -44,7 +44,13 @@
               Sequi itaque, unde perferendis nemo debitis dolor.
             </p>
           </div>
-          <img src="img/about-photo.jpg" alt="iphone" class="about__img" width="430" height="245" />
+          <video
+            src="video/iphone.mp4"
+            width="430"
+            height="245"
+            controls
+            poster="img/about-photo.jpg"
+          ></video>
         </div>
       </section>
       <section class="dignity">
@@ -291,5 +297,30 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <h2 class="title footer__title title--color">Contacts</h2>
+      <div class="footer__wrap">
+        <form action="/" class="form">
+          <input type="text" class="footer__input" placeholder="Your name:" />
+          <input type="email" class="footer__input" placeholder="Your email:" />
+          <textarea class="footer__textarea" placeholder="Your message:"></textarea>
+          <button class="btn btn-small" type="submit">Send</button>
+        </form>
+        <div class="footer__links">
+          <div class="footer__links-contacts">
+            <a href="skype:+1234567890?call" class="footer__link link-skype"
+              >here_your_login_skype</a
+            >
+            <a href="#" class="footer__link link-icq">279679659</a>
+            <a href="mailto:psdhtmlcss@mail.ru" class="footer__link link-mail"
+              >psdhtmlcss@mail.ru</a
+            >
+            <a href="tel:+700045685555" class="footer__link link-phone">80 00 4568 55 55</a>
+          </div>
+          <a class="footer__links-social" href="#">lfigx</a>
+        </div>
+      </div>
+      <p class="footer__copyright">Copyright © 2014 Product name · PSD HTML CSS</p>
+    </footer>
   </body>
 </html>
