@@ -24,15 +24,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Socialico";
-  src: url("../fonts/Socialico.woff2") format("woff2"),
-    url("../fonts/Socialico.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -181,6 +172,7 @@ ul {
 .screenshots__content {
   padding: 0 12px 0 19px;
 }
+
 .screenshots__item-title {
   font-size: 24px;
   line-height: 1;
@@ -247,6 +239,7 @@ ul {
 .buy {
   padding: 50px 0 50px;
 }
+
 .buy__title {
   margin: 0 0 29px 0;
 }
@@ -257,6 +250,7 @@ ul {
   align-items: flex-end;
   justify-content: space-evenly;
 }
+
 .buy__item {
   border-radius: 5px;
   background-color: #445161;
@@ -342,7 +336,7 @@ ul {
 .form {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 26%;
   margin: 0 46px 0 0;
 }
 
@@ -354,6 +348,7 @@ ul {
   padding: 14px 10px;
   margin: 0 0 21px 0;
 }
+
 .footer__textarea::placeholder,
 .footer__input::placeholder {
   color: #445162;
@@ -423,10 +418,18 @@ ul {
   padding: 10px 0 5px;
 }
 
-.footer__links-social {
-  font-family: "Socialico";
-  font-size: 60px;
-  color: #fff;
-  letter-spacing: 1.5px;
-  text-decoration: none;
+.socials__link-icon {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #445161;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.socials__link + .socials__link {
+  margin: 0 0 0 8px;
 }
