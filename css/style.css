@@ -418,6 +418,18 @@ ul {
   padding: 10px 0 5px;
 }
 
+.social {
+  display: flex;
+}
+
+.socials__link {
+  text-decoration: none;
+}
+
+.socials__link + .socials__link {
+  margin: 0 0 0 8px;
+}
+
 .socials__link-icon {
   text-align: center;
   width: 40px;
@@ -428,8 +440,4 @@ ul {
   background-color: #fff;
   border-radius: 50%;
   padding: 12px;
-}
-
-.socials__link + .socials__link {
-  margin: 0 0 0 8px;
 }
