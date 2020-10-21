@@ -305,7 +305,8 @@ ul {
   transition: 0.3s color linear, 0.3s background-color linear;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   color: #fff;
   background-color: rgba(30, 31, 32, 0.3);
 }
@@ -374,7 +375,8 @@ ul {
   transition: 0.3s all linear;
 }
 
-.footer__link:hover {
+.footer__link:hover,
+.footer__link:focus {
   text-decoration: underline;
 }
 
@@ -427,7 +429,8 @@ ul {
   text-decoration: none;
 }
 
-.socials__link:hover .socials__link-icon {
+.socials__link:hover .socials__link-icon,
+.socials__link:focus .socials__link-icon {
   color: #fff;
   background-color: rgba(30, 31, 32, 0.3);
 }
